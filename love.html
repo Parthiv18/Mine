@@ -5,40 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love</title>
     <style>
-      /* General body styling */
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
         background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
-        overflow: hidden;
         color: #444;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
 
-      /* Container styling */
       .container {
         text-align: center;
         background: #ffffff;
         padding: 2rem;
         border-radius: 15px;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        max-width: 90%;
-        width: 400px;
+        max-width: 100%;
+        min-width: 600px;
+        width: 70%;
+        margin: 5rem auto;
+        overflow: auto;
       }
 
-      /* Title styling */
       .container h1 {
         color: #ff79c6;
         margin-bottom: 1rem;
         font-size: 1.8rem;
       }
 
-      /* Input styling */
       .container input[type="password"] {
-        width: 100%;
+        width: 80%;
         padding: 0.8rem;
         margin: 1rem 0;
         font-size: 1rem;
@@ -53,7 +50,6 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
       }
 
-      /* Button styling */
       .container button {
         padding: 0.8rem 2rem;
         font-size: 1rem;
@@ -70,7 +66,6 @@
         background: #78c0b6;
       }
 
-      /* Popup styling */
       .popup {
         display: none;
         position: fixed;
@@ -86,8 +81,9 @@
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         text-align: center;
         z-index: 10;
-        max-width: 90%;
-        width: 350px;
+        max-width: 80%;
+        max-height: 80%;
+        overflow-y: auto;
       }
 
       .popup button {
@@ -115,12 +111,35 @@
       <button onclick="checkPassword()">Submit</button>
     </div>
     <div id="popup" class="popup">
-      Hi! How was your day? 😊
+      Hi! Happy 3rd Anniversary YAY! 😊 You being in my life means a lot to me
+      man like your my entire world space galaxy milky (o milk hehe) way like
+      everything. Whatever you do me for means like does not go unnoticed like I
+      know and see everything you and that fills my heart up with immense joy.
+      Like you bringing me food, coming to my house like travelling 2h+ and
+      having to wake up early, like man thats more than what I can ask for. You
+      having a hectic and busy life and still making time for me for the past 3
+      months. Spending time with you, like you being here for me is the best
+      feeling ever and something super speical. Whatever I do for you feels so
+      less and I just want to do everything. I rememeber when we first started
+      and how far we have came along and not for a single point in time my love
+      for you went down in fact it well up and up (like my..nvm). And how ever
+      many times I show my love and thankfullness it is like nothing compared to
+      what you do for me. Everytime you text or we call like holy best time
+      during the day, I look forward to every minute and wish it just paused
+      there, me and you only. I promiose I will do everything for you take care
+      of you and hope too spend my entire life with you (and my bike ofc). Just
+      rememeber whatever you do for me knowingly or unknowling it does not go
+      unnoticed. And I love you so much man. Happy 3rd month Anniversary and
+      many more too come my baby tiger 🐅. I always wish the best for you and
+      will be by your side no matter what happens. But stop stressing too much
+      and whatever you do, do it slowly please. Your eyes are like a maze, I'd
+      love to get lost in them. Your nose is perfect, skin is bright, hair is
+      flawless, and everything about you is just so beautiful. If you are the
+      Sun, then I'd be the Earth constantly circling around you. I love you!!!!
       <button onclick="closePopup()">Close</button>
     </div>
 
     <script>
-      // Function to check the password
       function checkPassword() {
         const password = document.getElementById("password").value;
         const popup = document.getElementById("popup");
@@ -132,7 +151,6 @@
         }
       }
 
-      // Function to close the popup
       function closePopup() {
         document.getElementById("popup").style.display = "none";
       }
